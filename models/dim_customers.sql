@@ -1,3 +1,7 @@
+{{ config (
+    materialized="table"
+)}}
+
 with customers as (
 
     select
@@ -5,9 +9,8 @@ with customers as (
         first_name,
         last_name
 
-    from `dbt-training-340123.DBT_Training.CUSTOMERS`
+    from `dbt-training-340123.DBTTraning.CUSTOMERS`
 ),
-
 orders as (
 
     select
@@ -16,7 +19,7 @@ orders as (
         order_date,
         status
 
-    from `dbt-training-340123.DBT_Training.ORDERS`
+    from `dbt-training-340123.DBTTraning.ORDERS`
 
 ),
 
