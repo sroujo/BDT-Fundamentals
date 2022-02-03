@@ -6,7 +6,7 @@ with orders as (
         order_date,
         status
 
-    from `dbt-training-340123.DBTTraning.ORDERS`
+    from DBTTraning.ORDERS
 )
 
 select * from orders

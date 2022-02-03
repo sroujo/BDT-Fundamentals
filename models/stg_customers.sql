@@ -5,7 +5,7 @@ with customers as (
         first_name,
         last_name
 
-    from `dbt-training-340123.DBTTraning.CUSTOMERS`
+    from DBTTraning.CUSTOMERS
 )
 
 select * from customers
