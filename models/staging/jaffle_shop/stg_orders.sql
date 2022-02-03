@@ -6,7 +6,8 @@ with orders as (
         order_date,
         status
 
-    from DBTTraning.ORDERS
+    -- from DBTTraning.ORDERS
+    from {{ source('DBTTraning', 'ORDERS') }}
 )
 
 select * from orders

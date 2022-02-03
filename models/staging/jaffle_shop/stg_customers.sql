@@ -5,7 +5,8 @@ with customers as (
         first_name,
         last_name
 
-    from DBTTraning.CUSTOMERS
+    -- from DBTTraning.CUSTOMERS
+    from {{ source('DBTTraning', 'CUSTOMERS') }}
 )
 
 select * from customers
